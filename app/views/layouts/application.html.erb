@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>RorAssignment</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<html lang="en">
+<head>
+  <title>Contact V17</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= favicon_pack_tag 'icons/favicon.ico' %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
+<body>
+  <%= yield %>
+  <div id="dropDownSelect1"></div>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</body>
 </html>
