@@ -513,3 +513,7 @@ textarea.input100 {
     opacity: 1;
   }
 }
+
+.contact-image-style{
+  background-image: url('../images/bg-01.jpg');
+}
