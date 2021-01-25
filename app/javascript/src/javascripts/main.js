@@ -1,11 +1,7 @@
 
-(function ($) {
+document.addEventListener("turbolinks:load", function() {
     "use strict";
-
-
-
-  
-  
+ 
     /*==================================================================
     [ Validate ]*/
     var input = $('.validate-input .input100');
@@ -54,6 +50,14 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
-    
 
-})(jQuery);
+    $(".selection-2").select2({
+      minimumResultsForSearch: 20,
+      dropdownParent: $('#dropDownSelect1')
+    });
+
+    $('.selection-2').on('change', function(){
+      let search = "?locale="+this.value;
+      window.location.href = window.location.protocol + "//" + window.location.host + window.location.pathname + search;
+    })
+});

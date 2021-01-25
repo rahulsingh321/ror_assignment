@@ -5,15 +5,21 @@
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
-import "channels"
+import 'channels';
+import jQuery from 'jquery/dist/jquery';
+import 'animsition/dist/js/animsition.min';
+import 'popper.js/dist/popper';
+import 'bootstrap/dist/js/bootstrap';
+import 'select2/dist/js/select2.min';
+import 'daterangepicker/moment.min';
+import 'daterangepicker/daterangepicker';
+import 'countdowntime/countdownTime';
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+window.$ = jQuery;
 
-import 'jquery';
-import 'popper.js/dist/popper';
-import 'bootstrap/dist/js/bootstrap';
 import '../src/javascripts/main';
 
 const images = require.context('../images', true)

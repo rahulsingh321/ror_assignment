@@ -6,11 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= favicon_pack_tag 'icons/favicon.ico' %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-</head>
-
-<body>
-  <%= yield %>
-  <div id="dropDownSelect1"></div>
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+  <%= render 'shared/flash_messages' %>
+  <%= yield %>
+
+  <!-- Language selector !-->
+  <div id="dropDownSelect1">
+    <%= select_tag 'languages', options_for_select([['English', :en], ['Spanish', :es]], params[:locale]), class: 'selection-2' %>
+  </div>
+  <%= render 'shared/gtm' %>
 </body>
 </html>

@@ -1,0 +1,10 @@
+es:
+  contact:
+    form_title: Mandanos un mensaje
+    name: Dinos tu nombre *
+    email: Introduce tu correo electrónico *
+    phone: Ingresa número telefónico
+    message: Mensaje *
+    send_message: Enviar mensaje
+    successfully_created: ¡Contacto creado con éxito!
+    new_contact: ¡Nuevo contacto registrado!

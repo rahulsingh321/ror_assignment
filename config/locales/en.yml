@@ -30,4 +30,12 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  contact:
+    form_title: Send Us A Message
+    name: Tell us your name *
+    email: Enter your email *
+    phone: Enter phone number
+    message: Message *
+    send_message: Send Message
+    successfully_created: 'Contact successfully created!'
+    new_contact: 'New Contact Registered!'
